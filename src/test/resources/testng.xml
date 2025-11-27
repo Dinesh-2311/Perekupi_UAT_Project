@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Perekupi Automation Suite">
+
+    <!-- Attach Extent Listener -->
+    <listeners>
+        <listener class-name="utils.ExtentTestNGListener"/>
+    </listeners>
+
+    <test name="Full UI Suite">
+        <classes>
+            <class name="tests.LoginTests"/>
+            <class name="tests.TableAndFiltersTests"/>
+        </classes>
+    </test>
+
+</suite>
